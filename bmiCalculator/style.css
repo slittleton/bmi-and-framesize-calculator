@@ -1,0 +1,111 @@
+body{
+  background-color: #ffffff;
+}
+.card-container{
+  display: flex;
+  justify-content: center;
+  
+}
+.container{
+
+  font-family: helvetica;
+
+}
+.inputs{
+  border-radius:.3rem;
+  border: 1px solid gray;
+  width: 60%;
+  padding: 2rem;
+  box-shadow: 2px 2px 2px gray;
+  margin-bottom: 1rem;
+  background-color: rgb(255, 255, 255);
+}
+.input-card{
+  display: flex;
+  justify-content: center;
+}
+.input-group{
+  border:none;
+  font-size: 1.75rem;
+  color: rgba(0,0,0);
+  border-bottom: 1px solid rgba(88, 88, 88, .5);
+  margin: .2rem;
+  padding-left: .5rem;
+  text-align: center;
+  width: 100%;
+  
+}
+.input-group-h{
+  border:none;
+  font-size: 1.75rem;
+  color: rgba(0,0,0);
+  border-bottom: 1px solid rgba(88, 88, 88, .5);
+  margin: .2rem;
+  padding-left: .5rem;
+  text-align: center;
+  width:50%;
+}
+.input-group::-webkit-input-placeholder, .input-group-h::-webkit-input-placeholder {
+  color: #e0e0e0;
+}
+
+.btn{
+  border-radius: .3rem;
+  font-size:1.5rem;
+  background-color: #474747;
+  color: rgb(199, 199, 199);
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.text-style{
+  font-size:1rem;
+
+}
+
+.results{
+  border-radius:.3rem;
+  border: 1px solid gray;
+  width: 60%;
+  padding: 2rem;
+  box-shadow: 2px 2px 2px gray;
+  margin-bottom: 1rem;
+
+}
+.results input{
+  border:none;
+  font-size:2rem;
+  border-radius:.3rem;
+  text-align: center;
+  margin: .5rem;
+  color: black;
+  width: 100%;
+
+}
+.results span{
+  font-size:1.5rem;
+}
+.results p {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.bmi-info{
+  border-radius:.3rem;
+  border: 1px solid gray;
+  width: 60%;
+  padding: 2rem;
+  box-shadow: 2px 2px 2px gray;
+  background-color: white;
+  margin-bottom:1rem;
+}
+#gender{
+  border:none;
+  font-size:1.75rem;
+
+}
+.sex-title{
+  font-size:1.75rem;
+  color: lightgray;
+  margin-right: .5rem;
+}

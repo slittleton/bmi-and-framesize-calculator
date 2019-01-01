@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>BMI Calculator</title>
+</head>
+<body>
+  <div class="container">
+
+    <!-- INPUTS -->
+    <div class="card-container">
+    <div class="inputs">
+      <h1 class="title">BMI & Frame Size Calculator</h1>
+      <p class="text-style">Please enter your information and press calculate</p>
+      <form class="bmi-inputs" id="bmi-form">
+          
+        <div class="input-card sex">
+          <p class="sex-title">Choose a Sex: </p>
+          <select id="gender">
+            <option value="neutral"> </option>
+            <option value="female">Female</option>
+            <option value="male">Male</option>
+          </select>
+        </div>
+        <div class="input-card">
+          <input type="number" class="input-group-h" id="height-ft" placeholder="Height feet">
+          <input type="number" class="input-group-h" id="height-in" placeholder="Height Inches">
+        </div>
+        <div class="input-card">
+          <input type="number" class="input-group-h" id="weight" placeholder="Weight lbs">
+        </div>
+        <div class="input-card">
+          <input type="number" step="0.01" class="input-group" id="wrist" placeholder="Wrist Circumference Inches">
+        </div>
+        <div class="submit-btn">
+          <input type="submit" class="btn" value="Calculate">
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ERROR MESSAGE -->
+  <div class="card-container" id="errorMsg">
+      <h3>You will need to answer all fields to get your results</h3>
+  </div>
+
+  <!-- ------------------------------ Results ------------------------------ -->
+    <!-- RESULTS BMI -->
+    <div class="card-container" id="results">
+    <div class="results">
+      <div id="bmiResults">
+        <p class="results-text">Results</p>
+        <span class="results-label">Your BMI is: </span>
+        <input type="number" class="displayResults" id="result" disabled>
+      </div>
+  <!-- RESULTS FRAME SIZE -->
+      <div id="frameSize">
+        <span class="results-label">Your Frame Size is: </span>
+        <input type="text" class="displayResults" id="result-frame" disabled>
+      </div>
+    </div>
+  </div>
+  <!-- ------------------------------ INFO ------------------------------ -->
+    <!-- BMI INFO -->
+  <div class="card-container">
+    <div class="bmi-info">
+      <h3>BMI Information</h3>
+      <p> Underweight &lt=18.5</p> 
+      <p>Normal weight = 18.5–24.9 </p>
+      <p>Overweight = 25–29.9 </p>
+      <p>Obesity &gt= 30</p>
+    </div>
+    </div>
+  </div>
+  <!-- Frame Size INFO -->
+  <div class="card-container">
+    <div class="bmi-info">
+      <h3>Frame Size Information</h3>
+      <p>Your frame size affects what a healthy bmi is for your body type.
+        If you have a small frame it could mean that you are not underweight 
+        if you are below 18.5. If you have a large body frame it possible that 
+        you are not overweight even if your bmi is a bit above 25. Other factors
+        to consider are your level of muscularity. If you have a lot of muscle then
+        bmi is not as good of a measure for a healthy weight. 
+      </p>
+    </div>
+    </div>
+
+</body>
+<script src="app.js"></script>
+</html>
